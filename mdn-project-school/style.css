@@ -1,0 +1,176 @@
+
+@font-face {
+
+font-family: 'creampeach'; 
+src: url('fonts/creampeach.woff') format('woff'),
+     url('fonts/creampeach.woff2') format('woff2');
+font-style: normal;
+font-weight: normal;
+}
+
+
+@font-face {
+
+font-family: 'leman';
+src: url('fonts/leman.woff') format('woff'),
+     url('fonts/leman.woff2') format('woff2');
+font-style: normal;
+font-weight: normal;
+}
+
+
+html {
+
+font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  word-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.1rem;
+  font-family: 'leman';
+  font-size: 1.6rem;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+header {
+
+text-align: center;
+}
+
+h1, h2 {
+letter-spacing: 0.3rem;
+font-size: 2.6rem;
+font-family: 'creampeach';
+}
+
+
+ul, ol {
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+h2 + p {
+text-indent: 20px;
+}
+
+
+a {
+outline: none;
+text-decoration: none;
+padding: 2px 1px 0;
+}
+
+
+a:link {
+color: red;
+}
+
+a:visited {
+color: orange;
+}
+
+a:focus {
+color: blue;
+}
+
+a:hover {
+border-bottom: 1px solid;
+}
+
+
+a:active {
+color: yellow;
+}
+
+a[href*="http"] {
+background: url('extlink.png') no-repeat 100% 0;
+background-size: 16px 16px;
+padding-right: 2.1rem;
+
+
+}
+
+li {
+line-height: 3rem;
+
+}
+
+nav ul {
+ list-style-type: none;
+ padding: 2rem;
+
+}
+
+nav a {
+
+color: black;
+text-align: center;
+width: 100%;
+margin-top: 1%;
+text-decoration: none;
+outline: none;
+line-height: 3;
+display: inline-block;
+ 
+}
+
+nav a:link, nav a:visited,nav a:focus {
+  background: yellow;
+  color: black;
+  
+}
+
+nav a:hover {     
+  background: orange;
+  border-bottom: none;
+}
+
+nav a:active {
+  background: red;
+  color: white;
+}
+
+
+
+
+
+

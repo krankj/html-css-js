@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Script Loading strategies</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        margin: 0 auto;
+      }
+
+      .lastResult {
+        color: white;
+        padding: 3px;
+      }
+    </style>
+    <script>
+      window.onload =  function () {
+      const heading = document.querySelector("h1");
+      heading.style.color = "red";
+    }
+    </script>
+
+  </head>
+
+  <body>
+    <h1>Script loading strategy</h1>
+    <p>This article explains on how different script loading strategies work</p>
+
+  </body>
+</html>

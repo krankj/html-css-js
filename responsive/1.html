@@ -1,0 +1,105 @@
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Responsive images </title>
+<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+<style type="text/css">
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-size: 10px;
+		margin: 0 2em;
+		background-color: #eee;
+		font-family: 'Alata', sans-serif;
+	}
+	header{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		display: flex;
+		padding: 0 2em;
+		justify-content: space-between;
+		background-color: rgb(56, 0, 54);
+		color: white;
+		font-size: 1.6em;
+		line-height: 2em;
+		box-shadow: 1px 1px 8px 5px rgba(0, 0, 0, 0.2);
+	}
+
+	main {
+		height: 120%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80%;
+		max-width: 96em;
+		margin: 12em auto 2em auto;
+		border-radius: 1em;
+		box-shadow: 1px 1px 8px 5px rgba(0, 0, 0, 0.2);
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		padding-left: 0;
+	}
+	footer{
+		text-align: center;
+		line-height: 10em;
+		font-weight: bold;
+	}
+	a {
+		text-align: center;
+		padding: 0 1em;
+		display: inline-block;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	a:hover {
+		color: rgb(128, 0, 123);
+	}
+
+	@media screen and (max-width: 450px) {
+		header {
+			flex-flow: column wrap;
+		}
+		h1 {
+			text-align: center;
+		}
+	}
+
+</style>
+</head>
+<body>
+	<header>
+	<h1> SIRI </h1>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#contactUs">Contact Us</a></li>
+		</ul>
+	</nav>
+</header>
+<main>
+	<picture>
+		<source media="(max-width: 699px)" srcset="wide-cropped.jpg">
+		<source media="(max-width: 740px)" srcset="wide-xlowres.jpg">
+		<source media="(max-width: 780px)" srcset="wide-lowres.jpg">
+		<img src="wide.jpg" alt="Beautiful scenery">
+	</picture>
+</main>
+	<h2 id="contactUs">
+		Contact Us for More Information
+	</h2>
+</body>
+<footer>
+	© 2020 - All rights reserved.
+</footer>
+	
+
+</body>
