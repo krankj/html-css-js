@@ -23,3 +23,13 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
+
+p {
+  font-size: 1rem;
+  letter-spacing: -1px;
+  position: absolute;
+  margin: 0;
+  top: 40px;
+  right: 5px;
+  color: white;
+}
