@@ -76,7 +76,6 @@ EvilCircle.prototype.setControls = function() {
 	let _this = this;
   let map = {};
   window.onkeydown = window.onkeyup = function(e){
-    console.log("Event type is", e.type)
     map[e.key] = e.type === 'keydown';
     if(map['a']){
       _this.x -= _this.velX;
