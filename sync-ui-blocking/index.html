@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simple synchronous blocking JavaScript example</title>
+    <style>
+      canvas {
+        border: 1px solid rgb(0,0,255);
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <button class="fill">Fill me</button>
+      <button class="alert">Click me for alert</button>
+    </p>
+  </body>
+  <script>
+    const canvas = document.createElement('canvas');
+    canvas.width = 640;
+    canvas.height = 480;
+
+    document.body.appendChild(canvas);
+    let ctx = canvas.getContext('2d');
+
+    let alertButton = document.querySelector(".alert");
+    let fillButton = document.querySelector(".fill");
+
+    function random(min, max){
+      return Math.floor(Math.random() * (max-min)) + min;
+    }
+
+    function degToRad(deg){
+      return deg * Math.PI / 180;
+    }
+
+    function fillCanvas() {
+      for(let i = 0; i < 1000000; i++) {
+        ctx.fillStyle = 'rgba(0,0,255, 0.2)';
+        ctx.beginPath();
+        ctx.arc(random(0, canvas.width), random(0, canvas.height), 10, degToRad(0), degToRad(360), false);
+        ctx.fill()
+      }
+    }
+    fillButton.addEventListener("click", fillCanvas);
+    alertButton.addEventListener("click", () => {
+      alert("Hey there!")
+    });
+   
+    </script>
+  </body>
+</html>
