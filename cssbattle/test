@@ -1,0 +1,27 @@
+<div class="b1"></div>
+<div class="b2"></div>
+<div class="b3"></div>
+<div class="b4"></div>
+<style>
+body{
+background: #62374e;
+  margin: 0;
+}
+div {
+position:absolute;
+background: #fdc57b;
+width: 50px;
+margin: 50px;
+height: 50px;
+}
+.b2, .b3{
+ right: 0;
+}
+.b3{
+bottom:0;
+}
+.b4{
+left: 0;
+bottom:0;
+} 
+</style>
